@@ -1,0 +1,155 @@
+/* ========== Base Styles ========== */
+body {
+  background-color: #f4f4e2; /* Soft beige for warmth and readability */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333; /* High contrast for accessibility */
+  margin: 0;
+  padding: 20px;
+  font-size: 1rem;
+}
+
+h1, h2, h3 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: clamp(1.5rem, 2vw, 2.5rem); /* Responsive headings */
+}
+
+section {
+  padding: 20px;
+}
+
+/* ========== Header & Logo ========== */
+.site-header {
+  background-color: #556b2f; /* Olive green */
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.header-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand-logo {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  background-color: #556b2f;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* ========== Navigation ========== */
+.main-nav {
+  background-color: #556b2f;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  color: #fafaf4;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.main-nav a.active,
+.main-nav a:hover {
+  text-decoration: underline;
+  color: #ffdd99;
+}
+
+.main-nav a:focus {
+  outline: 2px dashed #ffdd99;
+  outline-offset: 4px;
+}
+
+/* ========== Featured Drink Section ========== */
+.featured-drink {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.featured-drink img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* ========== Welcome Section ========== */
+.welcome img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+/* ========== Testimonials ========== */
+.testimonials blockquote {
+  font-style: italic;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* ========== Image Layouts ========== */
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.image-block {
+  max-width: 300px;
+  text-align: center;
+}
+
+.image-block img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.caption {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* ========== Footer ========== */
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #799b3e;
+  color: #fafaf4;
+}
+
+/* ========== Optional Layout Container ========== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ========== Smooth Scroll ========== */
+html {
+  scroll-behavior: smooth;
+}
